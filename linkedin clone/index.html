@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LinkedIn Clone</title>
+
+    <!-- Bootstrap 4.6 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="css\style.css">
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light navbarbg fixed-top border-bottom">
+      <a class="navbar-brand" href="#">
+        <i class="fab fa-linkedin fa-lg" style="color:#0a66c2; font-size:2.4rem"></i>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <form class="form-inline ml-2">
+        <input class="form-control searche" type="search" placeholder="Arama Yap" aria-label="Search" />
+      </form>
+
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ml-4">
+          <li class="nav-item active mr-3">
+            <a class="nav-link d-flex flex-column align-items-center" href="#">
+              <i class="fas fa-home fa-lg text-dark"></i>
+              <div class="menutext">Ana Sayfa</div>
+            </a>
+          </li>
+          <li class="nav-item active mr-4">
+            <a class="nav-link d-flex flex-column align-items-center" href="#">
+              <i class="fas fa-user-friends fa-lg"></i>
+              <div class="menutext">Ağım</div>
+            </a>
+          </li>
+          <li class="nav-item active mr-2">
+            <a class="nav-link d-flex flex-column align-items-center" href="#">
+              <i class="fas fa-briefcase fa-lg"></i>
+              <div class="menutext">İş İlanları</div>
+            </a>
+          </li>
+          <li class="nav-item active mr-1">
+            <a class="nav-link d-flex flex-column align-items-center" href="#">
+              <i class="fas fa-comment-dots fa-lg"></i>
+              <div class="menutext">Mesajlaşma</div>
+            </a>
+          </li>
+          <li class="nav-item active mr-1">
+            <a class="nav-link d-flex flex-column align-items-center" href="#">
+              <i class="fas fa-bell fa-lg"></i>
+              <div class="menutext">Bildirimler</div>
+            </a>
+          </li>
+          <li class="nav-item dropdown mt-1 mr-3 ml-3">
+            <a class="nav-link d-flex flex-column align-items-center" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <img src="https://media-exp1.licdn.com/dms/image/C4D03AQFpMjVJ_N2wRQ/profile-displayphoto-shrink_100_100/0/1582787654653?e=1616630400&v=beta&t=C1X2NxhcN0R0GmELl1Ew7BeOoyGbwJXCw8c7lHm6XuA" class="rounded-circle" width="25" height="25" alt="Ben" />
+              <div class="menutext">Ben</div>
+            </a>
+          </li>
+          <li class="nav-item active border-left pl-4 pr-2">
+            <a class="nav-link d-flex flex-column align-items-center" href="#">
+              <i class="fas fa-th fa-lg"></i>
+              <div class="menutext">İş</div>
+            </a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link d-flex flex-column align-items-center" href="#">
+              <i class="fas fa-chalkboard fa-lg"></i>
+              <div class="menutext">İş İlanı Yayınla</div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="row">
+        <!-- Sol panel (2 birim) -->
+        <div class="col-2">
+          <div class="card">
+            <div class="cover"></div>
+            <img src="https://media-exp1.licdn.com/dms/image/C4D03AQFpMjVJ_N2wRQ/profile-displayphoto-shrink_100_100/0/1582787654653?e=1616630400&v=beta&t=C1X2NxhcN0R0GmELl1Ew7BeOoyGbwJXCw8c7lHm6XuA" alt="Avatar" class="avatar" />
+            <div class="card-body text-center">
+              <p class="card-title header mb-1">
+                <a href="https://www.linkedin.com/in/cengizcmataraci/" target="_blank" class="text-dark">Cengiz Cemal Mataracı</a>
+              </p>
+              <div class="mb-2 text-muted" style="font-size:13px;">Software Developer at Navlungo - Dijital Lojistik Platformu</div>
+              <hr/>
+              <div class="card-text">
+                <div class="d-flex justify-content-between">
+                  <span class="view">Profilinizi kimler görüntüledi</span>
+                  <span class="view text-primary">447</span>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <span class="view">Yayınınız için görüntüleme</span>
+                  <span class="view text-primary">150</span>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer bg-white">
+              <i class="fas fa-bookmark mr-2"></i>Ögelerim
+            </div>
+          </div>
+
+          <div class="card mt-2">
+            <div class="card-header bg-white">
+              <span style="font-size:18px">Sayfalarım</span>
+            </div>
+            <div class="card-body py-2">
+              <div class="d-flex align-items-center">
+                <img src="https://media-exp1.licdn.com/dms/image/C4E0BAQGl9HYLHdcl6g/company-logo_100_100/0/1610108537301?e=1619654400&v=beta&t=MxTTjGSiH6Xvx2x9YMbjgLWIaU5uojZNqXGGuUIWUQo" width="32" height="32" alt="Kablosuz Beyin" />
+                <div class="ml-2">
+                  <div class="font-weight-bold" style="font-size:15px">Kablosuz Beyin</div>
+                  <div class="d-flex align-items-center text-muted" style="font-size:13px; font-weight:700;">
+                    <span>Sayfa Bildirimleri</span>
+                    <span class="badge badge-primary ml-auto">10</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mt-2 sticky-left">
+            <div class="card-header bg-white border-0" style="font-size:12px">En Yeni</div>
+            <div class="card-body pt-2">
+              <div class="font-weight-bold text-muted" style="font-size:13px;"><i class="fas fa-hashtag"></i><span class="ml-2">kodluyoruz</span></div>
+              <div class="font-weight-bold text-muted" style="font-size:13px;"><i class="fas fa-hashtag"></i><span class="ml-2">front-end</span></div>
+              <div class="font-weight-bold text-muted" style="font-size:13px;"><i class="fas fa-hashtag"></i><span class="ml-2">html</span></div>
+              <div class="font-weight-bold text-muted" style="font-size:13px;"><i class="fas fa-hashtag"></i><span class="ml-2">css</span></div>
+              <div class="font-weight-bold text-muted" style="font-size:13px;"><i class="fas fa-hashtag"></i><span class="ml-2">bootstrap</span></div>
+              <div class="mt-3 categories">Gruplar</div>
+              <span class="mt-2 categories d-inline-block">Etkinlikler</span>
+              <span class="float-right mb-2" style="font-size:23px; color:#5f5f5f">+</span>
+              <div class="mt-3 mb-1 categories">Takip edilen hashtagler</div>
+              <div class="font-weight-bold text-muted" style="font-size:13px;"><i class="fas fa-hashtag"></i><span class="ml-2">kodluyoruz</span></div>
+              <div class="font-weight-bold text-muted" style="font-size:13px;"><i class="fas fa-hashtag"></i><span class="ml-2">front-end</span></div>
+            </div>
+            <div class="card-footer bg-white">Daha fazla keşfet</div>
+          </div>
+        </div>
+
+        <!-- Orta panel (6 birim) -->
+        <div class="col-6">
+          <div class="card">
+            <div class="card-body">
+              <input type="text" class="form-control content-input" placeholder="Bir gönderi başlat" />
+              <div class="d-flex justify-content-between mt-3 post-actions">
+                <button class="btn btn-light btn-sm btn-photo">
+                  <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 4H5a3 3 0 00-3 3v10a3 3 0 003 3h14a3 3 0 003-3V7a3 3 0 00-3-3zm1 13a1 1 0 01-.29.71L16 14l-2 2-6-6-4 4V7a1 1 0 011-1h14a1 1 0 011 1zm-2-7a2 2 0 11-2-2 2 2 0 012 2z"></path></svg>
+                  <span class="ml-1">Fotoğraf</span>
+                </button>
+                <button class="btn btn-light btn-sm btn-video">
+                  <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 4H5a3 3 0 00-3 3v10a3 3 0 003 3h14a3 3 0 003-3V7a3 3 0 00-3-3zm-9 12V8l6 4z"></path></svg>
+                  <span class="ml-1">Video</span>
+                </button>
+                <button class="btn btn-light btn-sm btn-event">
+                  <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 3v15a3 3 0 003 3h12a3 3 0 003-3V3zm13 1.75A1.25 1.25 0 1114.75 6 1.25 1.25 0 0116 4.75zm-8 0A1.25 1.25 0 116.75 6 1.25 1.25 0 018 4.75zM19 18a1 1 0 01-1 1H6a1 1 0 01-1-1V9h14zm-5.9-3a1 1 0 00-1-1H12a3.12 3.12 0 00-1 .2l-1-.2v-3h3.9v1H11v1.15a3.7 3.7 0 011.05-.15 1.89 1.89 0 012 1.78V15a1.92 1.92 0 01-1.84 2H12a1.88 1.88 0 01-2-1.75 1 1 0 010-.25h1a.89.89 0 001 1h.1a.94.94 0 001-.88z"></path></svg>
+                  <span class="ml-1">Etkinlik</span>
+                </button>
+                <button class="btn btn-light btn-sm btn-article">
+                  <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 3v2H3V3zm-6 6h6V7h-6zm0 4h6v-2h-6zm0 4h6v-2h-6zM3 21h18v-2H3zM13 7H3v10h10z"></path></svg>
+                  <span class="ml-1">Yazı yaz</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <hr>
+
+          <!-- Post 1 -->
+          <div class="card">
+            <div class="card-header bg-white">
+              <div class="post-header">
+                <img src="https://media-exp1.licdn.com/dms/image/C4E03AQEq7HNPXtEvvw/profile-displayphoto-shrink_200_200/0/1596227507685?e=1617235200&v=beta&t=Br4sHpegbSSX-GR1RnrEqRrZxTr55k3R80qTImOV0i0" class="rounded-circle" width="50" height="50" alt="David J. Malan">
+                <div class="meta ml-2">
+                  <a href="https://www.linkedin.com/in/malan/" target="_blank" class="name">David J. Malan</a>
+                  <div class="title">I teach CS50</div>
+                  <div class="time">25a <i class="fas fa-globe-americas fa-sm"></i></div>
+                </div>
+                <i class="fas fa-ellipsis-h fa-md ml-auto"></i>
+              </div>
+            </div>
+            <div class="card-body">
+              <p class="card-text" style="font-size:15px; color:#000;">They have done great things! Tebrikler Kodluyoruz!</p>
+              <img src="https://pbs.twimg.com/media/Em2_xBbXUAEVDx1.jpg" class="card-img-top mb-2" alt="post görseli" />
+              <div class="reactions">
+                <img src="https://static-exp1.licdn.com/sc/h/d310t2g24pvdy4pt1jkedo4yb" alt="like">
+                <img src="https://static-exp1.licdn.com/sc/h/5thsbmikm6a8uov24ygwd914f" alt="celebrate">
+                <span class="text-muted small"><img src="https://static-exp1.licdn.com/sc/h/7fx9nkd7mx8avdpqm5hqcbi97" alt="love"> 958</span>
+              </div>
+            </div>
+            <div class="card-footer bg-white">
+              <button class="btn btn-light btn-sm mr-2"><i class="far fa-thumbs-up mr-2"></i>Beğen</button>
+              <button class="btn btn-light btn-sm mr-2"><i class="far fa-comment mr-2"></i>Yorum Yap</button>
+              <button class="btn btn-light btn-sm mr-2"><i class="fas fa-share mr-2"></i>Paylaş</button>
+              <button class="btn btn-light btn-sm"><i class="fas fa-paper-plane mr-2"></i>Gönder</button>
+            </div>
+          </div>
+
+          <!-- Post 2 -->
+          <div class="card mt-2">
+            <div class="card-header bg-white">
+              <div class="post-header">
+                <img src="https://media-exp1.licdn.com/dms/image/C4D03AQElb-DNAAEmdw/profile-displayphoto-shrink_100_100/0/1612346194572?e=1617840000&v=beta&t=h3L8-3LHbhYLbAv1rsO744OwtBSZmYXvsEqdEEPrQyU" class="rounded-circle" width="50" height="50" alt="Ozan Halis İLTER">
+                <div class="meta ml-2">
+                  <a href="https://www.linkedin.com/in/ozanhalis/" target="_blank" class="name">Ozan Halis İLTER</a>
+                  <div class="title">Team Leader at YetGen | CodeCraft | Kablosuz Beyin | IEEE MEF...</div>
+                  <div class="time">1s <i class="fas fa-globe-americas fa-sm"></i></div>
+                </div>
+                <i class="fas fa-ellipsis-h fa-md ml-auto"></i>
+              </div>
+            </div>
+            <div class="card-body">
+              <p class="card-text" style="font-size:15px; color:#000;">Erhan Erkut hocamız ile birlikte YetGen'de harika şeyler yapmak için geliyoruz!</p>
+              <img src="https://miro.medium.com/max/1080/1*gdDWFSvHDt57DS2zsh_0Bg.png" class="card-img-top mb-2" alt="post görseli" />
+              <div class="reactions">
+                <img src="https://static-exp1.licdn.com/sc/h/d310t2g24pvdy4pt1jkedo4yb" alt="like">
+                <img src="https://static-exp1.licdn.com/sc/h/5thsbmikm6a8uov24ygwd914f" alt="celebrate">
+                <span class="text-muted small"><img src="https://static-exp1.licdn.com/sc/h/7fx9nkd7mx8avdpqm5hqcbi97" alt="love"> 210</span>
+              </div>
+            </div>
+            <div class="card-footer bg-white">
+              <button class="btn btn-light btn-sm mr-2"><i class="far fa-thumbs-up mr-2"></i>Beğen</button>
+              <button class="btn btn-light btn-sm mr-2"><i class="far fa-comment mr-2"></i>Yorum Yap</button>
+              <button class="btn btn-light btn-sm mr-2"><i class="fas fa-share mr-2"></i>Paylaş</button>
+              <button class="btn btn-light btn-sm"><i class="fas fa-paper-plane mr-2"></i>Gönder</button>
+            </div>
+          </div>
+
+          <!-- Post 3 -->
+          <div class="card mt-2">
+            <div class="card-header bg-white border-0">
+              <div class="post-header">
+                <img src="https://media-exp1.licdn.com/dms/image/C4E03AQH4JkiPZoa8rA/profile-displayphoto-shrink_200_200/0/1599749901304?e=1617840000&v=beta&t=f7PcMP3AD9cAr7oMWdgIxVW4XESNdh2R_7alX7oVltY" class="rounded-circle" width="50" height="50" alt="Ramazan Sancar">
+                <div class="meta ml-2">
+                  <a href="https://www.linkedin.com/in/ramazansancar/" target="_blank" class="name">Ramazan Sancar</a>
+                  <div class="title">Co-Founder at Kablosuz Beyin | Intern & Community Lead at Kod...</div>
+                  <div class="time">25a <i class="fas fa-globe-americas fa-sm"></i></div>
+                </div>
+                <i class="fas fa-ellipsis-h fa-md ml-auto"></i>
+              </div>
+            </div>
+            <div class="card-body">
+              <p class="card-text" style="font-size:15px; color:#212529;">Cat Özel Harekat'a katılmak isteyenleri şöyle alalım..</p>
+              <img src="https://media-exp1.licdn.com/dms/image/C4D22AQEm8KJthEJcwA/feedshare-shrink_800/0/1608202571866?e=1615420800&v=beta&t=YvPxACnfgaojpTgKIaeOd_apcdEzTVS82cM-kJYKv4U" class="card-img-top mb-2" alt="post görseli" />
+              <div class="reactions">
+                <img src="https://static-exp1.licdn.com/sc/h/d310t2g24pvdy4pt1jkedo4yb" alt="like">
+                <img src="https://static-exp1.licdn.com/sc/h/5thsbmikm6a8uov24ygwd914f" alt="celebrate">
+                <span class="text-muted small"><img src="https://static-exp1.licdn.com/sc/h/7fx9nkd7mx8avdpqm5hqcbi97" alt="love"> 224</span>
+              </div>
+            </div>
+            <div class="card-footer bg-white">
+              <button class="btn btn-light btn-sm mr-2"><i class="far fa-thumbs-up mr-2"></i>Beğen</button>
+              <button class="btn btn-light btn-sm mr-2"><i class="far fa-comment mr-2"></i>Yorum Yap</button>
+              <button class="btn btn-light btn-sm mr-2"><i class="fas fa-share mr-2"></i>Paylaş</button>
+              <button class="btn btn-light btn-sm"><i class="fas fa-paper-plane mr-2"></i>Gönder</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sağ panel (3 birim) -->
+        <div class="col-3 right-col">
+          <div class="card follow-list">
+            <div class="card-header bg-white border-0 d-flex justify-content-between align-items-center">
+              <span>Akışınıza ekleyin</span>
+              <i class="fas fa-info-circle"></i>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <img src="https://media-exp1.licdn.com/dms/image/C4E0BAQFJFhz89Jkl1w/company-logo_200_200/0/1609603335789?e=1619654400&v=beta&t=m6mVHf05Zfd34UW8SBsvRz939Z_lxYUY3GilK-_MrCw" alt="Codecraft" />
+                <div class="name">Codecraft</div>
+                <button class="btn btn-outline-primary btn-sm ml-auto rounded-pill font-weight-bold">+ Takip Et</button>
+              </li>
+              <li class="list-group-item">
+                <img src="https://media-exp1.licdn.com/dms/image/C4D0BAQF7ydVqrVTvqg/company-logo_200_200/0/1587802313117?e=1619654400&v=beta&t=2kFooBBTUCTVngrEWmktX1z6nI8EgX8nRdQNH8-vxww" alt="Podfresh" />
+                <div class="name">Podfresh</div>
+                <button class="btn btn-outline-primary btn-sm ml-auto rounded-pill font-weight-bold">+ Takip Et</button>
+              </li>
+              <li class="list-group-item">
+                <img src="https://media-exp1.licdn.com/dms/image/C4D0BAQH1zDgdaC7alQ/company-logo_200_200/0/1578773895199?e=1619654400&v=beta&t=ke3I_LL-q5odDNzcfpiAsWTIjnqUk2BCVNQCI88BQqk" alt="Navlungo" />
+                <div class="name">Navlungo</div>
+                <button class="btn btn-outline-primary btn-sm ml-auto rounded-pill font-weight-bold">+ Takip Et</button>
+              </li>
+            </ul>
+          </div>
+
+          <div class="card mt-2">
+            <div class="card-header bg-white border-0 d-flex justify-content-between align-items-center">
+              <span>Bugünün en çok izlenen eğitimleri</span>
+              <i class="fas fa-info-circle"></i>
+            </div>
+            <div class="card-body pt-0">
+              <ol class="mb-0 pl-3">
+                <li>
+                  The Six Morning Habits of High Perf...
+                  <div class="text-muted" style="font-weight:400; font-size:13px;">Pete Mocakatais | How to be awesome at you...</div>
+                </li>
+                <li class="mt-2">
+                  Onconscious Blas
+                  <div class="text-muted" style="font-weight:400; font-size:13px;">Stacey Gordon</div>
+                </li>
+                <li class="mt-2">
+                  Critical Thinking for Better Judgme...
+                  <div class="text-muted" style="font-weight:400; font-size:13px;">Becki Saltzman</div>
+                </li>
+              </ol>
+            </div>
+            <div class="card-footer bg-white" style="color:#0a66c2; font-size:15px;">LinkedIn Learning'de daha fazlasını göster</div>
+          </div>
+
+          <div class="right-sticky mt-3 text-center">
+            <div class="footer-links">
+              <a href="https://about.linkedin.com/" class="link">Hakkında</a>
+              <a href="https://www.linkedin.com/accessibility" class="link">Erişilebilirlik</a>
+              <a href="https://www.linkedin.com/help/linkedin" class="link">Yardım Merkezi</a>
+              <a href="#" class="link">Gizlilik ve Koşullar</a>
+              <a href="https://www.linkedin.com/help/linkedin/answer/62931" class="link">Reklam Tercihleri</a>
+              <a href="https://www.linkedin.com/ad/start" class="link">Reklam</a>
+            </div>
+            <div class="text-center mt-2">
+              <img src="https://www.logo.wine/a/logo/LinkedIn/LinkedIn-Logo.wine.svg" width="90" height="20" alt="LinkedIn" />
+              <span style="font-size:12px;">LinkedIn Corporation © 2021</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Boş kalan 1 kolon (isteğe bağlı): layout'u ortalamaya yardımcı olur -->
+        <div class="col-1 d-none d-xl-block"></div>
+      </div>
+    </div>
+
+    <!-- Mesajlaşma (fixed, 300px, beyaz arkaplan) -->
+    <div class="messaging shadow">
+      <nav class="navbar navbar-light bg-white px-2 py-0">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <img src="https://media-exp1.licdn.com/dms/image/C4D03AQFpMjVJ_N2wRQ/profile-displayphoto-shrink_100_100/0/1582787654653?e=1616630400&v=beta&t=C1X2NxhcN0R0GmELl1Ew7BeOoyGbwJXCw8c7lHm6XuA" width="30" height="30" class="rounded-circle" alt="pp" />
+          <span class="ml-2 font-weight-bold" style="font-size:14px;">Mesajlaşma</span>
+        </a>
+        <div class="ml-auto d-flex align-items-center">
+          <img src="/assets/edit-regular.svg" width="15" height="15" alt="compose" class="mr-3" />
+          <i class="fas fa-ellipsis-h fa-sm mr-3"></i>
+          <i class="fas fa-chevron-up fa-sm"></i>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,134 @@
+/* === Global / Fixes === */
+body {
+  background-color: #f3f2ef;
+  padding-top: 70px; /* fixed navbar için boşluk */
+}
+
+.navbarbg {
+  height: 55px;
+  background-color: #fff !important;
+}
+
+/* search */
+.searche {
+  height: 36px;
+  max-width: 500px;
+  background-color: #eef3f8;
+  border: 0;
+  background-image: url(/bootstraplinkedinclone/assets/search-solid.svg);
+  background-repeat: no-repeat;
+  background-size: 16px 16px;
+  background-position: 12px center;
+  padding-left: 36px; /* ikon boşluğu */
+}
+.searche::placeholder {
+  font-size: 14px;
+  color: gray;
+}
+
+.menutext {
+  font-size: 13px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: gray;
+  margin-top: 5px;
+  font-weight: normal;
+}
+.menutext:hover { color: #000; }
+
+i { color: gray; }
+i:hover { color: #000; }
+
+.content-input {
+  border-radius: 40px;
+  height: 45px;
+  font-weight: 600;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url(/bootstraplinkedinclone/assets/edit-regular.svg);
+  background-repeat: no-repeat;
+  background-size: 18px 18px;
+  background-position: 14px center;
+  padding-left: 44px; /* ikon boşluğu */
+}
+
+.card { border-radius: 10px; }
+
+.header { font-family: Arial, Helvetica, sans-serif; font-size: 16px; font-weight: 700; }
+
+.view {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  color: #5f5f5f;
+}
+
+.categories { font-size: 13px; font-weight: 700; color: #0a66c2; }
+
+li { font-size: 14px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-weight: 700; }
+
+.link { font-size: 12px; color: #5f5f5f; }
+
+/* avatar */
+.cover {
+  background-image: url(https://thumbor.forbes.com/thumbor/fit-in/1200x0/filters%3Aformat%28jpg%29/https%3A%2F%2Fblogs-images.forbes.com%2Falejandrocremades%2Ffiles%2F2018%2F12%2Fbusiness-3605367_1920-1200x741.jpg);
+  height: 53px;
+  background-size: cover;
+  background-position: center;
+}
+.avatar {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 2px solid #fff; /* 2 birim beyaz kenarlık */
+  display: block;
+  margin: -35px auto 0; /* ortalama + cover üzerine bindirme */
+}
+
+/* left column sticky block */
+.sticky-left { position: sticky; top: 4rem; overflow: visible; }
+
+/* post composer buttons */
+.post-actions .btn { font-weight: 600; color: #5f5f5f; }
+.post-actions .btn .icon { width: 24px; height: 24px; }
+.post-actions .btn-photo svg { fill: #70b5f9; }
+.post-actions .btn-video svg { fill: #7fc15e; }
+.post-actions .btn-event svg { fill: #e7a33e; }
+.post-actions .btn-article svg { fill: #f5987e; }
+
+/* post header layout (name top, title middle, time bottom) */
+.post-header { display: flex; align-items: flex-start; }
+.post-header .meta { display: flex; flex-direction: column; justify-content: space-between; height: 50px; }
+.post-header .meta .name { font-weight: 700; color: #212529; }
+.post-header .meta .title { color: #474747; font-size: 13px; }
+.post-header .meta .time { color: #474747; font-size: 13px; }
+
+/* reactions spacing */
+.reactions img { margin-right: 6px; }
+
+/* right column: follow list as list-group */
+.follow-list .list-group-item { display: flex; align-items: center; }
+.follow-list img { width: 50px; height: 50px; border-radius: 50%; }
+.follow-list .name { font-size: 14px; font-weight: 700; margin-left: 10px; }
+
+/* right column sticky bottom section */
+.right-sticky { position: sticky; top: 4rem; overflow: visible; }
+.footer-links { display: flex; flex-wrap: wrap; gap: 8px 16px; justify-content: center; }
+
+/* messaging widget */
+.messaging {
+  position: fixed; bottom: 15px; right: 15px;
+  width: 300px; height: 50px; background: #fff; border: 1px solid rgba(0,0,0,.1);
+  border-radius: 8px; z-index: 1030; /* navbar üstünde */
+}
+.messaging .navbar { height: 50px; }
+
+/* utility */
+.no-border { border: 0 !important; }
+
+/* remove stray inline margins/colors from icons */
+.icon-btn { display: inline-flex; align-items: center; }
+.icon-btn i { margin: 0; }
+
+/* make right column cards full width of column */
+.right-col .card { width: 100%; }
